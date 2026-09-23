@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WebUIModel csempeMod="MENU" id="AATKOD" info="Adatszolgáltatás a tartós adathordozó végleges hozzáférhetetlenné tételéhez szükséges adattörlő kód fogyasztók részére történő átadásáról" mainDocumentId="AATKOD" major="3" minor="0" mukodesiMod="NORMAL" name="AATKOD" templateType="single" tipus="ADATSZOLGALTATAS" webDefaultLength="4" webInfo="Adatszolgáltatás a tartós adathordozó végleges hozzáférhetetlenné tételéhez szükséges adattörlő kód fogyasztók részére történő átadásáról" webName="AATKOD" webOnell="false">
+    <Form id="AATKOD" name="AATKOD" webDefaultLength="4" webInfo="Adatszolgáltatás a tartós adathordozó végleges hozzáférhetetlenné tételéhez szükséges adattörlő kód fogyasztók részére történő átadásáról" webName="AATKOD">
+        <Assistants>
+            <AssistantItem id="ROOT_ASSISTANTITEM" leaf="false" name="Mezők hozzáadása" pos="0"/>
+            <TileAssistants/>
+        </Assistants>
+        <Attachements>
+            <ATCSIZES size="0MB" sum_size="0MB" rsize="2147483647" rsum_size="2147483647"/>
+        </Attachements>
+        <DynGroup chainId="120005">
+            <ButtonText name="add" value="900000"/>
+            <ButtonText name="remove" value="900001"/>
+            <ButtonText name="first" value="900002"/>
+            <ButtonText name="next" value="900003"/>
+            <ButtonText name="prev" value="900004"/>
+            <ButtonText name="last" value="900005"/>
+            <ButtonText name="n_element" value="900006"/>
+        </DynGroup>
+        <DynamicStructure id="120006" maxCount="349965">
+            <PartIndex fgId="120006" index="0"/>
+        </DynamicStructure>
+        <FieldGroup defaultGroup="true" index="0" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120002.html" fgroupType="NORMAL" id="120002" name="Adózó adatai" wId="FG1">
+            <Fid>0A0001C010A</Fid>
+            <Fid>0A0001C011A</Fid>
+            <Layout type="GROUP" wId="FG1_G1">
+                <Layout type="INLINE" wId="FG1_G1_I1">
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG1_G1_I1_IG1">
+                        <Field id="0A0001C010A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="Főlap_adószám" webLength="3" wId="FG1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="9" type="INLINE_GROUP" wId="FG1_G1_I1_IG2">
+                        <Field id="0A0001C011A" label="Neve" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="Főlap_adózó_név" webLength="9" wId="FG1_G1_I1_IG2_F1" calculated="false" default="false" irids="8" maxLength="80" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="true" index="1" maxCount="9999" nextId="120011" toggleSwitch="false" type="DYNAMIC" visualType="open" webHelp="G_120006.html" fgroupType="NORMAL" id="120006" name="Adatszolgáltatás az adattörlő kódról" wId="FG2">
+            <Fid>01XXXXC0001AA</Fid>
+            <Fid>01XXXXC0001BA</Fid>
+            <Fid>01XXXXC0001CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout type="GROUP" wId="FG2_G1">
+                <Layout type="INLINE" wId="FG2_G1_I1">
+                    <Layout fixGrid="false" grid="5" type="INLINE_GROUP" wId="FG2_G1_I1_IG1">
+                        <Field id="01XXXXC0001AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A1" webLength="5" wId="FG2_G1_I1_IG1_F1" calculated="false" default="false" help="D_38.html" irids="8" maxLength="80" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG2_G1_I1_IG2">
+                        <Field id="01XXXXC0001BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B1" webLength="2" wId="FG2_G1_I1_IG2_F1" calculated="false" default="false" help="D_39.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="5" type="INLINE_GROUP" wId="FG2_G1_I1_IG3">
+                        <Field id="01XXXXC0001CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C1" webLength="5" wId="FG2_G1_I1_IG3_F1" calculated="false" default="false" help="D_40.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120013" toggleSwitch="false" type="DYNAMIC" webHelp="G_120011.html" fgroupType="NORMAL" id="120011" name="c_adatszolgaltatas_02" wId="FG3">
+            <Fid>01XXXXC0002AA</Fid>
+            <Fid>01XXXXC0002BA</Fid>
+            <Fid>01XXXXC0002CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG3_V1">
+                <Field id="01XXXXC0002AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A2" webLength="4" wId="FG3_V1_F1" calculated="false" default="false" help="D_41.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG3_V2">
+                <Field id="01XXXXC0002BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B2" webLength="4" wId="FG3_V2_F1" calculated="false" default="false" help="D_42.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG3_V3">
+                <Field id="01XXXXC0002CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C2" webLength="4" wId="FG3_V3_F1" calculated="false" default="false" help="D_43.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120014" toggleSwitch="false" type="DYNAMIC" webHelp="G_120013.html" fgroupType="NORMAL" id="120013" name="c_adatszolgaltatas_03" wId="FG4">
+            <Fid>01XXXXC0003AA</Fid>
+            <Fid>01XXXXC0003BA</Fid>
+            <Fid>01XXXXC0003CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG4_V1">
+                <Field id="01XXXXC0003AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A3" webLength="4" wId="FG4_V1_F1" calculated="false" default="false" help="D_44.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG4_V2">
+                <Field id="01XXXXC0003BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B3" webLength="4" wId="FG4_V2_F1" calculated="false" default="false" help="D_45.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG4_V3">
+                <Field id="01XXXXC0003CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C3" webLength="4" wId="FG4_V3_F1" calculated="false" default="false" help="D_46.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120015" toggleSwitch="false" type="DYNAMIC" webHelp="G_120014.html" fgroupType="NORMAL" id="120014" name="c_adatszolgaltatas_04" wId="FG5">
+            <Fid>01XXXXC0004AA</Fid>
+            <Fid>01XXXXC0004BA</Fid>
+            <Fid>01XXXXC0004CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG5_V1">
+                <Field id="01XXXXC0004AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A4" webLength="4" wId="FG5_V1_F1" calculated="false" default="false" help="D_47.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG5_V2">
+                <Field id="01XXXXC0004BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B4" webLength="4" wId="FG5_V2_F1" calculated="false" default="false" help="D_48.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG5_V3">
+                <Field id="01XXXXC0004CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C4" webLength="4" wId="FG5_V3_F1" calculated="false" default="false" help="D_49.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120016" toggleSwitch="false" type="DYNAMIC" webHelp="G_120015.html" fgroupType="NORMAL" id="120015" name="c_adatszolgaltatas_05" wId="FG6">
+            <Fid>01XXXXC0005AA</Fid>
+            <Fid>01XXXXC0005BA</Fid>
+            <Fid>01XXXXC0005CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG6_V1">
+                <Field id="01XXXXC0005AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A5" webLength="4" wId="FG6_V1_F1" calculated="false" default="false" help="D_51.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG6_V2">
+                <Field id="01XXXXC0005BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B5" webLength="4" wId="FG6_V2_F1" calculated="false" default="false" help="D_52.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG6_V3">
+                <Field id="01XXXXC0005CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C5" webLength="4" wId="FG6_V3_F1" calculated="false" default="false" help="D_53.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120017" toggleSwitch="false" type="DYNAMIC" webHelp="G_120016.html" fgroupType="NORMAL" id="120016" name="c_adatszolgaltatas_06" wId="FG7">
+            <Fid>01XXXXC0006AA</Fid>
+            <Fid>01XXXXC0006BA</Fid>
+            <Fid>01XXXXC0006CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG7_V1">
+                <Field id="01XXXXC0006AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A6" webLength="4" wId="FG7_V1_F1" calculated="false" default="false" help="D_54.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG7_V2">
+                <Field id="01XXXXC0006BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B6" webLength="4" wId="FG7_V2_F1" calculated="false" default="false" help="D_55.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG7_V3">
+                <Field id="01XXXXC0006CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C6" webLength="4" wId="FG7_V3_F1" calculated="false" default="false" help="D_56.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120018" toggleSwitch="false" type="DYNAMIC" webHelp="G_120017.html" fgroupType="NORMAL" id="120017" name="c_adatszolgaltatas_07" wId="FG8">
+            <Fid>01XXXXC0007AA</Fid>
+            <Fid>01XXXXC0007BA</Fid>
+            <Fid>01XXXXC0007CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG8_V1">
+                <Field id="01XXXXC0007AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A7" webLength="4" wId="FG8_V1_F1" calculated="false" default="false" help="D_57.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG8_V2">
+                <Field id="01XXXXC0007BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B7" webLength="4" wId="FG8_V2_F1" calculated="false" default="false" help="D_58.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG8_V3">
+                <Field id="01XXXXC0007CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C7" webLength="4" wId="FG8_V3_F1" calculated="false" default="false" help="D_59.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120019" toggleSwitch="false" type="DYNAMIC" webHelp="G_120018.html" fgroupType="NORMAL" id="120018" name="c_adatszolgaltatas_08" wId="FG9">
+            <Fid>01XXXXC0008AA</Fid>
+            <Fid>01XXXXC0008BA</Fid>
+            <Fid>01XXXXC0008CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG9_V1">
+                <Field id="01XXXXC0008AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A8" webLength="4" wId="FG9_V1_F1" calculated="false" default="false" help="D_60.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG9_V2">
+                <Field id="01XXXXC0008BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B8" webLength="4" wId="FG9_V2_F1" calculated="false" default="false" help="D_61.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG9_V3">
+                <Field id="01XXXXC0008CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C8" webLength="4" wId="FG9_V3_F1" calculated="false" default="false" help="D_62.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120020" toggleSwitch="false" type="DYNAMIC" webHelp="G_120019.html" fgroupType="NORMAL" id="120019" name="c_adatszolgaltatas_09" wId="FG10">
+            <Fid>01XXXXC0009AA</Fid>
+            <Fid>01XXXXC0009BA</Fid>
+            <Fid>01XXXXC0009CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG10_V1">
+                <Field id="01XXXXC0009AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A9" webLength="4" wId="FG10_V1_F1" calculated="false" default="false" help="D_63.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG10_V2">
+                <Field id="01XXXXC0009BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B9" webLength="4" wId="FG10_V2_F1" calculated="false" default="false" help="D_64.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG10_V3">
+                <Field id="01XXXXC0009CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C9" webLength="4" wId="FG10_V3_F1" calculated="false" default="false" help="D_65.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120021" toggleSwitch="false" type="DYNAMIC" webHelp="G_120020.html" fgroupType="NORMAL" id="120020" name="c_adatszolgaltatas_10" wId="FG11">
+            <Fid>01XXXXC0010AA</Fid>
+            <Fid>01XXXXC0010BA</Fid>
+            <Fid>01XXXXC0010CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG11_V1">
+                <Field id="01XXXXC0010AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A10" webLength="4" wId="FG11_V1_F1" calculated="false" default="false" help="D_66.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG11_V2">
+                <Field id="01XXXXC0010BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B10" webLength="4" wId="FG11_V2_F1" calculated="false" default="false" help="D_67.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG11_V3">
+                <Field id="01XXXXC0010CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C10" webLength="4" wId="FG11_V3_F1" calculated="false" default="false" help="D_68.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120022" toggleSwitch="false" type="DYNAMIC" webHelp="G_120021.html" fgroupType="NORMAL" id="120021" name="c_adatszolgaltatas_11" wId="FG12">
+            <Fid>01XXXXC0011AA</Fid>
+            <Fid>01XXXXC0011BA</Fid>
+            <Fid>01XXXXC0011CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG12_V1">
+                <Field id="01XXXXC0011AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A11" webLength="4" wId="FG12_V1_F1" calculated="false" default="false" help="D_69.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG12_V2">
+                <Field id="01XXXXC0011BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B11" webLength="4" wId="FG12_V2_F1" calculated="false" default="false" help="D_70.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG12_V3">
+                <Field id="01XXXXC0011CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C11" webLength="4" wId="FG12_V3_F1" calculated="false" default="false" help="D_71.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120023" toggleSwitch="false" type="DYNAMIC" webHelp="G_120022.html" fgroupType="NORMAL" id="120022" name="c_adatszolgaltatas_12" wId="FG13">
+            <Fid>01XXXXC0012AA</Fid>
+            <Fid>01XXXXC0012BA</Fid>
+            <Fid>01XXXXC0012CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG13_V1">
+                <Field id="01XXXXC0012AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A12" webLength="4" wId="FG13_V1_F1" calculated="false" default="false" help="D_72.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG13_V2">
+                <Field id="01XXXXC0012BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B12" webLength="4" wId="FG13_V2_F1" calculated="false" default="false" help="D_73.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG13_V3">
+                <Field id="01XXXXC0012CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C12" webLength="4" wId="FG13_V3_F1" calculated="false" default="false" help="D_74.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120024" toggleSwitch="false" type="DYNAMIC" webHelp="G_120023.html" fgroupType="NORMAL" id="120023" name="c_adatszolgaltatas_13" wId="FG14">
+            <Fid>01XXXXC0013AA</Fid>
+            <Fid>01XXXXC0013BA</Fid>
+            <Fid>01XXXXC0013CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG14_V1">
+                <Field id="01XXXXC0013AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A13" webLength="4" wId="FG14_V1_F1" calculated="false" default="false" help="D_75.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG14_V2">
+                <Field id="01XXXXC0013BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B13" webLength="4" wId="FG14_V2_F1" calculated="false" default="false" help="D_76.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG14_V3">
+                <Field id="01XXXXC0013CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C13" webLength="4" wId="FG14_V3_F1" calculated="false" default="false" help="D_77.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120025" toggleSwitch="false" type="DYNAMIC" webHelp="G_120024.html" fgroupType="NORMAL" id="120024" name="c_adatszolgaltatas_14" wId="FG15">
+            <Fid>01XXXXC0014AA</Fid>
+            <Fid>01XXXXC0014BA</Fid>
+            <Fid>01XXXXC0014CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG15_V1">
+                <Field id="01XXXXC0014AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A14" webLength="4" wId="FG15_V1_F1" calculated="false" default="false" help="D_78.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG15_V2">
+                <Field id="01XXXXC0014BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B14" webLength="4" wId="FG15_V2_F1" calculated="false" default="false" help="D_79.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG15_V3">
+                <Field id="01XXXXC0014CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C14" webLength="4" wId="FG15_V3_F1" calculated="false" default="false" help="D_80.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120026" toggleSwitch="false" type="DYNAMIC" webHelp="G_120025.html" fgroupType="NORMAL" id="120025" name="c_adatszolgaltatas_15" wId="FG16">
+            <Fid>01XXXXC0015AA</Fid>
+            <Fid>01XXXXC0015BA</Fid>
+            <Fid>01XXXXC0015CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG16_V1">
+                <Field id="01XXXXC0015AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A15" webLength="4" wId="FG16_V1_F1" calculated="false" default="false" help="D_81.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG16_V2">
+                <Field id="01XXXXC0015BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B15" webLength="4" wId="FG16_V2_F1" calculated="false" default="false" help="D_82.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG16_V3">
+                <Field id="01XXXXC0015CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C15" webLength="4" wId="FG16_V3_F1" calculated="false" default="false" help="D_83.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120027" toggleSwitch="false" type="DYNAMIC" webHelp="G_120026.html" fgroupType="NORMAL" id="120026" name="c_adatszolgaltatas_16" wId="FG17">
+            <Fid>01XXXXC0016AA</Fid>
+            <Fid>01XXXXC0016BA</Fid>
+            <Fid>01XXXXC0016CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG17_V1">
+                <Field id="01XXXXC0016AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A16" webLength="4" wId="FG17_V1_F1" calculated="false" default="false" help="D_84.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG17_V2">
+                <Field id="01XXXXC0016BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B16" webLength="4" wId="FG17_V2_F1" calculated="false" default="false" help="D_85.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG17_V3">
+                <Field id="01XXXXC0016CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C16" webLength="4" wId="FG17_V3_F1" calculated="false" default="false" help="D_86.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120028" toggleSwitch="false" type="DYNAMIC" webHelp="G_120027.html" fgroupType="NORMAL" id="120027" name="c_adatszolgaltatas_17" wId="FG18">
+            <Fid>01XXXXC0017AA</Fid>
+            <Fid>01XXXXC0017BA</Fid>
+            <Fid>01XXXXC0017CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG18_V1">
+                <Field id="01XXXXC0017AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A17" webLength="4" wId="FG18_V1_F1" calculated="false" default="false" help="D_87.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG18_V2">
+                <Field id="01XXXXC0017BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B17" webLength="4" wId="FG18_V2_F1" calculated="false" default="false" help="D_88.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG18_V3">
+                <Field id="01XXXXC0017CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C17" webLength="4" wId="FG18_V3_F1" calculated="false" default="false" help="D_89.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120029" toggleSwitch="false" type="DYNAMIC" webHelp="G_120028.html" fgroupType="NORMAL" id="120028" name="c_adatszolgaltatas_18" wId="FG19">
+            <Fid>01XXXXC0018AA</Fid>
+            <Fid>01XXXXC0018BA</Fid>
+            <Fid>01XXXXC0018CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG19_V1">
+                <Field id="01XXXXC0018AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A18" webLength="4" wId="FG19_V1_F1" calculated="false" default="false" help="D_90.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG19_V2">
+                <Field id="01XXXXC0018BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B18" webLength="4" wId="FG19_V2_F1" calculated="false" default="false" help="D_91.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG19_V3">
+                <Field id="01XXXXC0018CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C18" webLength="4" wId="FG19_V3_F1" calculated="false" default="false" help="D_92.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120030" toggleSwitch="false" type="DYNAMIC" webHelp="G_120029.html" fgroupType="NORMAL" id="120029" name="c_adatszolgaltatas_19" wId="FG20">
+            <Fid>01XXXXC0019AA</Fid>
+            <Fid>01XXXXC0019BA</Fid>
+            <Fid>01XXXXC0019CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG20_V1">
+                <Field id="01XXXXC0019AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A19" webLength="4" wId="FG20_V1_F1" calculated="false" default="false" help="D_93.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG20_V2">
+                <Field id="01XXXXC0019BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B19" webLength="4" wId="FG20_V2_F1" calculated="false" default="false" help="D_94.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG20_V3">
+                <Field id="01XXXXC0019CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C19" webLength="4" wId="FG20_V3_F1" calculated="false" default="false" help="D_95.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120031" toggleSwitch="false" type="DYNAMIC" webHelp="G_120030.html" fgroupType="NORMAL" id="120030" name="c_adatszolgaltatas_20" wId="FG21">
+            <Fid>01XXXXC0020AA</Fid>
+            <Fid>01XXXXC0020BA</Fid>
+            <Fid>01XXXXC0020CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG21_V1">
+                <Field id="01XXXXC0020AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A20" webLength="4" wId="FG21_V1_F1" calculated="false" default="false" help="D_96.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG21_V2">
+                <Field id="01XXXXC0020BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B20" webLength="4" wId="FG21_V2_F1" calculated="false" default="false" help="D_97.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG21_V3">
+                <Field id="01XXXXC0020CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C20" webLength="4" wId="FG21_V3_F1" calculated="false" default="false" help="D_98.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120032" toggleSwitch="false" type="DYNAMIC" webHelp="G_120031.html" fgroupType="NORMAL" id="120031" name="c_adatszolgaltatas_21" wId="FG22">
+            <Fid>01XXXXC0021AA</Fid>
+            <Fid>01XXXXC0021BA</Fid>
+            <Fid>01XXXXC0021CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG22_V1">
+                <Field id="01XXXXC0021AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A21" webLength="4" wId="FG22_V1_F1" calculated="false" default="false" help="D_99.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG22_V2">
+                <Field id="01XXXXC0021BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B21" webLength="4" wId="FG22_V2_F1" calculated="false" default="false" help="D_100.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG22_V3">
+                <Field id="01XXXXC0021CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C21" webLength="4" wId="FG22_V3_F1" calculated="false" default="false" help="D_101.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120033" toggleSwitch="false" type="DYNAMIC" webHelp="G_120032.html" fgroupType="NORMAL" id="120032" name="c_adatszolgaltatas_22" wId="FG23">
+            <Fid>01XXXXC0022AA</Fid>
+            <Fid>01XXXXC0022BA</Fid>
+            <Fid>01XXXXC0022CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG23_V1">
+                <Field id="01XXXXC0022AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A22" webLength="4" wId="FG23_V1_F1" calculated="false" default="false" help="D_102.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG23_V2">
+                <Field id="01XXXXC0022BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B22" webLength="4" wId="FG23_V2_F1" calculated="false" default="false" help="D_103.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG23_V3">
+                <Field id="01XXXXC0022CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C22" webLength="4" wId="FG23_V3_F1" calculated="false" default="false" help="D_104.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120034" toggleSwitch="false" type="DYNAMIC" webHelp="G_120033.html" fgroupType="NORMAL" id="120033" name="c_adatszolgaltatas_23" wId="FG24">
+            <Fid>01XXXXC0023AA</Fid>
+            <Fid>01XXXXC0023BA</Fid>
+            <Fid>01XXXXC0023CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG24_V1">
+                <Field id="01XXXXC0023AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A23" webLength="4" wId="FG24_V1_F1" calculated="false" default="false" help="D_105.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG24_V2">
+                <Field id="01XXXXC0023BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B23" webLength="4" wId="FG24_V2_F1" calculated="false" default="false" help="D_106.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG24_V3">
+                <Field id="01XXXXC0023CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C23" webLength="4" wId="FG24_V3_F1" calculated="false" default="false" help="D_107.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120035" toggleSwitch="false" type="DYNAMIC" webHelp="G_120034.html" fgroupType="NORMAL" id="120034" name="c_adatszolgaltatas_24" wId="FG25">
+            <Fid>01XXXXC0024AA</Fid>
+            <Fid>01XXXXC0024BA</Fid>
+            <Fid>01XXXXC0024CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG25_V1">
+                <Field id="01XXXXC0024AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A24" webLength="4" wId="FG25_V1_F1" calculated="false" default="false" help="D_108.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG25_V2">
+                <Field id="01XXXXC0024BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B24" webLength="4" wId="FG25_V2_F1" calculated="false" default="false" help="D_109.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG25_V3">
+                <Field id="01XXXXC0024CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C24" webLength="4" wId="FG25_V3_F1" calculated="false" default="false" help="D_110.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120036" toggleSwitch="false" type="DYNAMIC" webHelp="G_120035.html" fgroupType="NORMAL" id="120035" name="c_adatszolgaltatas_25" wId="FG26">
+            <Fid>01XXXXC0025AA</Fid>
+            <Fid>01XXXXC0025BA</Fid>
+            <Fid>01XXXXC0025CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG26_V1">
+                <Field id="01XXXXC0025AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A25" webLength="4" wId="FG26_V1_F1" calculated="false" default="false" help="D_111.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG26_V2">
+                <Field id="01XXXXC0025BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B25" webLength="4" wId="FG26_V2_F1" calculated="false" default="false" help="D_112.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG26_V3">
+                <Field id="01XXXXC0025CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C25" webLength="4" wId="FG26_V3_F1" calculated="false" default="false" help="D_113.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120037" toggleSwitch="false" type="DYNAMIC" webHelp="G_120036.html" fgroupType="NORMAL" id="120036" name="c_adatszolgaltatas_26" wId="FG27">
+            <Fid>01XXXXC0026AA</Fid>
+            <Fid>01XXXXC0026BA</Fid>
+            <Fid>01XXXXC0026CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG27_V1">
+                <Field id="01XXXXC0026AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A26" webLength="4" wId="FG27_V1_F1" calculated="false" default="false" help="D_129.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG27_V2">
+                <Field id="01XXXXC0026BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B26" webLength="4" wId="FG27_V2_F1" calculated="false" default="false" help="D_130.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG27_V3">
+                <Field id="01XXXXC0026CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C26" webLength="4" wId="FG27_V3_F1" calculated="false" default="false" help="D_131.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120038" toggleSwitch="false" type="DYNAMIC" webHelp="G_120037.html" fgroupType="NORMAL" id="120037" name="c_adatszolgaltatas_27" wId="FG28">
+            <Fid>01XXXXC0027AA</Fid>
+            <Fid>01XXXXC0027BA</Fid>
+            <Fid>01XXXXC0027CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG28_V1">
+                <Field id="01XXXXC0027AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A27" webLength="4" wId="FG28_V1_F1" calculated="false" default="false" help="D_132.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG28_V2">
+                <Field id="01XXXXC0027BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B27" webLength="4" wId="FG28_V2_F1" calculated="false" default="false" help="D_133.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG28_V3">
+                <Field id="01XXXXC0027CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C27" webLength="4" wId="FG28_V3_F1" calculated="false" default="false" help="D_134.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120039" toggleSwitch="false" type="DYNAMIC" webHelp="G_120038.html" fgroupType="NORMAL" id="120038" name="c_adatszolgaltatas_28" wId="FG29">
+            <Fid>01XXXXC0028AA</Fid>
+            <Fid>01XXXXC0028BA</Fid>
+            <Fid>01XXXXC0028CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG29_V1">
+                <Field id="01XXXXC0028AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A28" webLength="4" wId="FG29_V1_F1" calculated="false" default="false" help="D_135.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG29_V2">
+                <Field id="01XXXXC0028BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B28" webLength="4" wId="FG29_V2_F1" calculated="false" default="false" help="D_136.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG29_V3">
+                <Field id="01XXXXC0028CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C28" webLength="4" wId="FG29_V3_F1" calculated="false" default="false" help="D_137.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120040" toggleSwitch="false" type="DYNAMIC" webHelp="G_120039.html" fgroupType="NORMAL" id="120039" name="c_adatszolgaltatas_29" wId="FG30">
+            <Fid>01XXXXC0029AA</Fid>
+            <Fid>01XXXXC0029BA</Fid>
+            <Fid>01XXXXC0029CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG30_V1">
+                <Field id="01XXXXC0029AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A29" webLength="4" wId="FG30_V1_F1" calculated="false" default="false" help="D_138.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG30_V2">
+                <Field id="01XXXXC0029BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B29" webLength="4" wId="FG30_V2_F1" calculated="false" default="false" help="D_139.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG30_V3">
+                <Field id="01XXXXC0029CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C29" webLength="4" wId="FG30_V3_F1" calculated="false" default="false" help="D_140.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120041" toggleSwitch="false" type="DYNAMIC" webHelp="G_120040.html" fgroupType="NORMAL" id="120040" name="c_adatszolgaltatas_30" wId="FG31">
+            <Fid>01XXXXC0030AA</Fid>
+            <Fid>01XXXXC0030BA</Fid>
+            <Fid>01XXXXC0030CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG31_V1">
+                <Field id="01XXXXC0030AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A30" webLength="4" wId="FG31_V1_F1" calculated="false" default="false" help="D_141.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG31_V2">
+                <Field id="01XXXXC0030BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B30" webLength="4" wId="FG31_V2_F1" calculated="false" default="false" help="D_142.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG31_V3">
+                <Field id="01XXXXC0030CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C30" webLength="4" wId="FG31_V3_F1" calculated="false" default="false" help="D_143.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120042" toggleSwitch="false" type="DYNAMIC" webHelp="G_120041.html" fgroupType="NORMAL" id="120041" name="c_adatszolgaltatas_31" wId="FG32">
+            <Fid>01XXXXC0031AA</Fid>
+            <Fid>01XXXXC0031BA</Fid>
+            <Fid>01XXXXC0031CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG32_V1">
+                <Field id="01XXXXC0031AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A31" webLength="4" wId="FG32_V1_F1" calculated="false" default="false" help="D_144.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG32_V2">
+                <Field id="01XXXXC0031BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B31" webLength="4" wId="FG32_V2_F1" calculated="false" default="false" help="D_145.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG32_V3">
+                <Field id="01XXXXC0031CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C31" webLength="4" wId="FG32_V3_F1" calculated="false" default="false" help="D_146.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120043" toggleSwitch="false" type="DYNAMIC" webHelp="G_120042.html" fgroupType="NORMAL" id="120042" name="c_adatszolgaltatas_32" wId="FG33">
+            <Fid>01XXXXC0032AA</Fid>
+            <Fid>01XXXXC0032BA</Fid>
+            <Fid>01XXXXC0032CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG33_V1">
+                <Field id="01XXXXC0032AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A32" webLength="4" wId="FG33_V1_F1" calculated="false" default="false" help="D_147.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG33_V2">
+                <Field id="01XXXXC0032BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B32" webLength="4" wId="FG33_V2_F1" calculated="false" default="false" help="D_148.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG33_V3">
+                <Field id="01XXXXC0032CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C32" webLength="4" wId="FG33_V3_F1" calculated="false" default="false" help="D_149.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120044" toggleSwitch="false" type="DYNAMIC" webHelp="G_120043.html" fgroupType="NORMAL" id="120043" name="c_adatszolgaltatas_33" wId="FG34">
+            <Fid>01XXXXC0033AA</Fid>
+            <Fid>01XXXXC0033BA</Fid>
+            <Fid>01XXXXC0033CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG34_V1">
+                <Field id="01XXXXC0033AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A33" webLength="4" wId="FG34_V1_F1" calculated="false" default="false" help="D_150.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG34_V2">
+                <Field id="01XXXXC0033BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B33" webLength="4" wId="FG34_V2_F1" calculated="false" default="false" help="D_151.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG34_V3">
+                <Field id="01XXXXC0033CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C33" webLength="4" wId="FG34_V3_F1" calculated="false" default="false" help="D_152.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120045" toggleSwitch="false" type="DYNAMIC" webHelp="G_120044.html" fgroupType="NORMAL" id="120044" name="c_adatszolgaltatas_34" wId="FG35">
+            <Fid>01XXXXC0034AA</Fid>
+            <Fid>01XXXXC0034BA</Fid>
+            <Fid>01XXXXC0034CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG35_V1">
+                <Field id="01XXXXC0034AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A34" webLength="4" wId="FG35_V1_F1" calculated="false" default="false" help="D_153.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG35_V2">
+                <Field id="01XXXXC0034BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B34" webLength="4" wId="FG35_V2_F1" calculated="false" default="false" help="D_154.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG35_V3">
+                <Field id="01XXXXC0034CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C34" webLength="4" wId="FG35_V3_F1" calculated="false" default="false" help="D_155.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120005" chainView="HORIZONTAL" defaultGroup="false" index="-1" maxCount="9999" nextId="120006" toggleSwitch="false" type="DYNAMIC" webHelp="G_120045.html" fgroupType="NORMAL" id="120045" name="c_adatszolgaltatas_35" wId="FG36">
+            <Fid>01XXXXC0035AA</Fid>
+            <Fid>01XXXXC0035BA</Fid>
+            <Fid>01XXXXC0035CA</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG36_V1">
+                <Field id="01XXXXC0035AA" label="Adathordozó értékesítését igazoló bizonylat sorszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]A35" webLength="4" wId="FG36_V1_F1" calculated="false" default="false" help="D_156.html" irids="8" maxLength="80" metaType="1"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG36_V2">
+                <Field id="01XXXXC0035BA" label="Átadás dátuma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="[01]B35" webLength="4" wId="FG36_V2_F1" calculated="false" default="false" help="D_157.html" irids="3" mask="####-##-##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout grid="4" longLabel="false" type="VERTICAL" wId="FG36_V3">
+                <Field id="01XXXXC0035CA" label="Fogyasztónak átadott adattörlő kód" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[01]C35" webLength="4" wId="FG36_V3_F1" calculated="false" default="false" help="D_158.html" irids="5" mask="####-####-####-####" maxLength="19" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <InputRule irid="1" irule="[A-Z]"/>
+        <InputRule irid="2" irule="[0-9,.]"/>
+        <InputRule irid="3" irule="[0-9]"/>
+        <InputRule irid="4" irule="[0-9+\-,.]"/>
+        <InputRule irid="5" irule="[A-Z0-9]"/>
+        <InputRule irid="6" irule="[A-ZÁÉÍÓÖŐÚÜŰ]"/>
+        <InputRule irid="7" irule="[^0-9]"/>
+        <InputRule irid="8" irule="[\x20-\uFFFF]"/>
+        <InputRule irid="9" irule="[ X]"/>
+        <InputRule irid="10" irule="[0-9+-]"/>
+        <Languages>
+            <LanguageCode>HU</LanguageCode>
+            <Language default="true" value="HU">
+                <Text id="900000" value="További adatok hozzáadása"/>
+                <Text id="900001" value="Adatok törlése"/>
+                <Text id="900002" value="Első adatsor"/>
+                <Text id="900003" value="Következő adatsor"/>
+                <Text id="900004" value="Előző adatsor"/>
+                <Text id="900005" value="Utolsó adatsor"/>
+                <Text id="900006" value=". adatsor"/>
+            </Language>
+        </Languages>
+        <Menu>
+            <MenuItem id="ROOT_MENUITEM" leaf="false" name="Mezők hozzáadása" pos="0" wizard="false">
+                <MenuItem concLevel="KONYVELO" icon="icon-topic.png" id="120001" leaf="true" name="Adatszolgáltatás a tartós adathordozó végleges hozzáférhetetlenné tételéhez szükséges adattörlő kód fogyasztók részére történő átadásáról" parentId="ROOT_MENUITEM" pos="1" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120002</FieldGroupId>
+                    <FieldGroupId>120006</FieldGroupId>
+                </MenuItem>
+            </MenuItem>
+            <TileMenus>
+                <TileMenuItem id="120001"/>
+            </TileMenus>
+        </Menu>
+        <Message id="1" msgLevel="error">
+            <CalcId>100001</CalcId>
+            <CalcId>100002</CalcId>
+            <CalcId>100003</CalcId>
+            <Msg>[Nyomtatvány] Verziokontroll=1</Msg>
+        </Message>
+        <Message id="2" msgLevel="error">
+            <CalcId>18</CalcId>
+            <CalcId>19</CalcId>
+            <CalcId>20</CalcId>
+            <CalcId>21</CalcId>
+            <CalcId>22</CalcId>
+            <CalcId>23</CalcId>
+            <CalcId>24</CalcId>
+            <CalcId>25</CalcId>
+            <CalcId>26</CalcId>
+            <Msg>Nyomtatvány betöltéskor automatikusan üríteni kell a cím adatokat (Hibakód=&lt;M018&gt;)</Msg>
+        </Message>
+        <Message id="3" msgLevel="fatalerror">
+            <CalcId>11</CalcId>
+            <Msg>Az "Adatszolgáltatás az adattörlő kódról" mezőcsoportban legalább egy adatsort kötelező kitölteni. (Hibakód=&lt;M009&gt;)</Msg>
+        </Message>
+        <Message id="4" msgLevel="fatalerror">
+            <CalcId>17</CalcId>
+            <Msg>Új lapot akkor nyisson, ha további adatsort szeretne feltüntetni. Az adatsorokat folyamatosan kell kitölteni. (Hibakód=&lt;M015&gt;)</Msg>
+        </Message>
+        <Message id="5" msgLevel="fatalerror">
+            <CalcId>15</CalcId>
+            <Msg>Az újonnan megnyitott adatsor nem lehet üres, vagy törölni kell az adatsort. (Hibakód=&lt;M016&gt;)</Msg>
+        </Message>
+        <Message id="6" msgLevel="fatalerror">
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <CalcId>14</CalcId>
+            <Msg>Az "Adatszolgáltatás az adattörlő kódról" mezőcsoportban az adatsorokat folyamatosan kell kitölteni. (Hibakód=&lt;M014&gt;)</Msg>
+        </Message>
+        <Message id="7" msgLevel="fatalerror">
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <CalcId>8</CalcId>
+            <CalcId>9</CalcId>
+            <CalcId>10</CalcId>
+            <Msg>Az "Adatszolgáltatás az adattörlő kódról" mezőcsoportban ha egy adatsorban az "Adathordozó értékesítését igazoló bizonylat sorszáma", vagy az "Átadás dátuma", vagy a "Fogyasztónak átadott adattörlő kód" mező kitöltött, akkor valamennyi mezőt kötelező kitölteni. (Hibakód=&lt;M010&gt;)</Msg>
+        </Message>
+        <Message id="8" msgLevel="fatalerror">
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <CalcId>13</CalcId>
+            <Msg>Az "Adatszolgáltatás az adattörlő kódról" mezőcsoportban az "Átadás dátuma" nem lehet későbbi az AATKOD nyomtatvány benyújtásának dátumánál. Kérem javítsa az átadás dátumát!  (Hibakód=&lt;M013&gt;)</Msg>
+        </Message>
+        <Message id="9" msgLevel="fatalerror">
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <CalcId>12</CalcId>
+            <Msg>Az "Adatszolgáltatás az adattörlő kódról" mezőcsoportban a "Fogyasztónak átadott adattörlő kód" mezőbe csak 16 karakterből, betűjelek és számok kombinációjából állhat, speciális karaktereket nem tartalmazhat. Kérem javítsa a megfelelő formátumra az adattörlő kódot! (Hibakód=&lt;M012&gt;)</Msg>
+        </Message>
+        <Message id="10" msgLevel="fatalerror">
+            <CalcId>4</CalcId>
+            <Msg>Az adószám kitöltése kötelező. (Hibakód=&lt;M001&gt;)</Msg>
+        </Message>
+        <Message id="11" msgLevel="fatalerror">
+            <CalcId>6</CalcId>
+            <Msg>Az adószámnak CDV helyesnek kell lennie. (Hibakód=&lt;M008&gt;)</Msg>
+        </Message>
+        <Message id="12" msgLevel="fatalerror">
+            <CalcId>5</CalcId>
+            <Msg>Az adózó nevét kötelező kitölteni. (Hibakód=&lt;M006&gt;)</Msg>
+        </Message>
+        <Message id="13" msgLevel="fatalerror">
+            <CalcId>7</CalcId>
+            <Msg>Az adatszolgáltatásos részt  folyamatos sorszámmal kell ellátni. (Hibakód=&lt;M017&gt;)</Msg>
+        </Message>
+        <SearchFieldGroupId>120002</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+        <SearchFieldGroupId>120006</SearchFieldGroupId>
+    </Form>
+</WebUIModel>
